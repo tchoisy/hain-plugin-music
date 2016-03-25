@@ -3,7 +3,6 @@
 
 module.exports = (pluginContext) => {
     const shell = pluginContext.shell;
-    const toast = pluginContext.toast;
 
     function search(query, res) {
         const query_trim = query.trim();
@@ -16,7 +15,7 @@ module.exports = (pluginContext) => {
             payload: 'all',
             title: 'Search ' + query_trim,
             desc: 'Search music',
-            icon: "#fa fa-music",
+            icon: "#fa fa-music"
         });
         
     }
@@ -24,7 +23,7 @@ module.exports = (pluginContext) => {
     function execute(id, payload) {
         
         if (payload == 'all') {
-            shell.openExternal('http://www.allmusic.com/search/all/'+encodeURI(id);
+            shell.openExternal('http://www.allmusic.com/search/all/'+encodeURI(id));
     
         }else{
             return;
