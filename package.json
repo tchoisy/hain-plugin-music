@@ -1,0 +1,22 @@
+{
+  "name": "hain-plugin-music",
+  "version": "0.0.1",
+  "description": "Search your music, artist",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tchoisy/hain-plugin-music.git"
+  },
+  "author": "Tommy CHOISY",
+  "license": "MIT",
+  "keywords": [
+    "hain"
+  ],
+  "homepage": "https://github.com/tchoisy/hain-plugin-music.git",
+  "hain": {
+    "prefix": "/music",
+    "usage": "/music [song, artist...]",
+    "icon": "/#fa fa-music",
+    "redirect": "/music "
+  }
+}
